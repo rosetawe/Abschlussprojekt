@@ -70,7 +70,7 @@ public class PlayerController : MonoBehaviour
         if (isGrounded)
         {
             Debug.Log("Jump triggered!");
-            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
         }
         else
         {
